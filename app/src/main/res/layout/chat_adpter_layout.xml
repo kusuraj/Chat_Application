@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/oppolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/oppoMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/this_is_opponent_message"
+
+                android:textColor="#424242"
+                android:background="@drawable/opo_msg_back"
+                android:padding="20dp"/>
+            <TextView
+                android:id="@+id/oppoMsgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10_08_2021_05_12_pm"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/myMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_msg_back"
+            android:padding="20dp"
+            android:text="@string/this_is_my_message"
+            android:textColor="#000000"
+            tools:ignore="TextContrastCheck" />
+        <TextView
+            android:id="@+id/myMsgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_13_08_2021_05_12_pm"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+
+            />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
